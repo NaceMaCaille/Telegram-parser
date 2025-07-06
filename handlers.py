@@ -12,7 +12,7 @@ load_dotenv()
 CHAT_ID = int(os.getenv('CHAT_ID'))
 
 
-async def check_and_send_air_warning(bot: Bot, chat_id: int):
+async def check_and_send_air_warning(bot: Bot):
     res = []
     for channel in CHANNELS:
         texts = await get_air_warning_message(channel)
