@@ -10,7 +10,6 @@ from parser import client
 load_dotenv()
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = int(os.getenv('CHAT_ID'))
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
