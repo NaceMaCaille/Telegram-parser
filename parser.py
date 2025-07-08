@@ -14,7 +14,7 @@ SESSION = os.getenv("TELETHON_SESSION")
 
 chanels = CHANNELS
 
-client = TelegramClient('bot', API_ID, API_HASH)
+client = TelegramClient(StringSession(SESSION), API_ID, API_HASH)
 
 
 async def get_air_warning_message(channels):
